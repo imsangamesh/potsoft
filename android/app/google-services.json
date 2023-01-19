@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "30128855245",
+    "project_id": "potsoft-ce21e",
+    "storage_bucket": "potsoft-ce21e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30128855245:android:84e3f6f0912e5c795ef184",
+        "android_client_info": {
+          "package_name": "com.example.potsoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30128855245-b9mt3enp41q48u15ja9asrm2b0di5tmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.potsoft",
+            "certificate_hash": "f93d1e004fcb5c9cff0a09160d99180d715cc6f3"
+          }
+        },
+        {
+          "client_id": "30128855245-d0blvvnobemti693qb01o6k74s8iqvaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC44keYXVMy38Us1J2BudrHg8KC9MUJJ84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30128855245-d0blvvnobemti693qb01o6k74s8iqvaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

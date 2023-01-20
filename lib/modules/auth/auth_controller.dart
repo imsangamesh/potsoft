@@ -55,6 +55,11 @@ class AuthController extends GetxController {
       /// ---------------------------------------- check for `ADMIN`
       checkForBusinessAccAndUpdate(showStatus: true);
       //
+      Utils.showAlert(
+        'Notice',
+        'We use location services to locate you with highest precisions so that potholes are located easily.\nWe really appreciate your cooperation.',
+      );
+      //
     } on FirebaseAuthException catch (e) {
       Get.back();
       Utils.showAlert('Oops', e.message.toString());

@@ -26,6 +26,21 @@ class MyThemes {
     listTileTheme: ListTileThemeData(
       tileColor: MyColors.lightListTile,
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+        ),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      ),
+    ),
     textTheme: GoogleFonts.rubikTextTheme().copyWith(
       bodyText2: const TextStyle(color: Colors.black),
       bodyText1: const TextStyle(color: Colors.black),
@@ -62,6 +77,21 @@ class MyThemes {
     ),
     listTileTheme: ListTileThemeData(
       tileColor: MyColors.darkListTile,
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+        ),
+      ),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+        ),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      ),
     ),
     textTheme: GoogleFonts.rubikTextTheme().copyWith(
       bodyText2: const TextStyle(color: Colors.white),

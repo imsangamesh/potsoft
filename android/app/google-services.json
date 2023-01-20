@@ -7,17 +7,54 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:30128855245:android:84e3f6f0912e5c795ef184",
+        "mobilesdk_app_id": "1:30128855245:android:4dcf065c41dde2305ef184",
         "android_client_info": {
-          "package_name": "com.example.potsoft"
+          "package_name": "com.crackhead.potsoft"
         }
       },
       "oauth_client": [
         {
-          "client_id": "30128855245-b9mt3enp41q48u15ja9asrm2b0di5tmo.apps.googleusercontent.com",
+          "client_id": "30128855245-jfadb6hoj1n7n46o38v2p8ka68kcf960.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.potsoft",
+            "package_name": "com.crackhead.potsoft",
+            "certificate_hash": "f93d1e004fcb5c9cff0a09160d99180d715cc6f3"
+          }
+        },
+        {
+          "client_id": "30128855245-d0blvvnobemti693qb01o6k74s8iqvaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC44keYXVMy38Us1J2BudrHg8KC9MUJJ84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30128855245-d0blvvnobemti693qb01o6k74s8iqvaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30128855245:android:ab27f3816945f03b5ef184",
+        "android_client_info": {
+          "package_name": "com.example.potsoft_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30128855245-jc50th4gvi5sa5ggos30me0mcfsgsdsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.potsoft_admin",
             "certificate_hash": "f93d1e004fcb5c9cff0a09160d99180d715cc6f3"
           }
         },

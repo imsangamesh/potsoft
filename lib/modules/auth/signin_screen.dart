@@ -41,20 +41,21 @@ class SigninScreen extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.only(top: 5, bottom: 5, left: 8),
             textStyle: MyTStyles.kTS16Medium,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(50),
-            ),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: const [
               Icon(Icons.account_circle, size: 30),
               SizedBox(width: 30),
-              Text('Sign up with Google'),
+              Text('Sign in with Google'),
               SizedBox(width: 50),
             ],
           ),
         ),
+        TextButton(
+          onPressed: () => authController.signInAnonymously(),
+          child: const Text('Sign in anonymously'),
+        )
       ]),
     );
   }

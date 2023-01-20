@@ -1,4 +1,4 @@
-package com.example.potsoft
+package com.crackhead.potsoft
 
 import io.flutter.embedding.android.FlutterActivity
 

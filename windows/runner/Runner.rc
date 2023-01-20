@@ -89,11 +89,11 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
+            VALUE "CompanyName", "com.crackhead" "\0"
             VALUE "FileDescription", "potsoft" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "potsoft" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.crackhead. All rights reserved." "\0"
             VALUE "OriginalFilename", "potsoft.exe" "\0"
             VALUE "ProductName", "potsoft" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"

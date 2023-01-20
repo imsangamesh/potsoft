@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'Potsoft',
       debugShowCheckedModeBanner: false,
       themeMode: globalThemeContrl.themeMode,
       theme: MyThemes.lightTheme,

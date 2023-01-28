@@ -50,6 +50,8 @@ class PotholeDetailsScreen extends StatelessWidget {
                       DateFormat('dd MMM yyy  |  hh:mm')
                           .format(DateTime.parse(dataMap['date'])),
                     ),
+                    const SizedBox(height: 10),
+                    labelText('Description', dataMap['description']),
                   ],
                 ),
               ),

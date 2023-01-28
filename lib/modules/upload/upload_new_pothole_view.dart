@@ -13,6 +13,7 @@ import 'package:potsoft/modules/upload/location_services.dart';
 import 'package:potsoft/modules/upload/pothole_controller.dart';
 
 import '../../core/themes/my_textstyles.dart';
+import '../../core/utilities/textfield_wrapper.dart';
 import '../../core/utilities/utils.dart';
 import '../../core/widgets/my_buttons.dart';
 
@@ -29,6 +30,8 @@ class _UploadNewPotholeState extends State<UploadNewPothole> {
   double? lat, long;
   PotholeModel? place;
   final fetching = false.obs;
+  final showLocationFetchBtn = false.obs;
+  final descriptionCntrl = TextEditingController();
 
   @override
   initState() {
@@ -42,7 +45,10 @@ class _UploadNewPotholeState extends State<UploadNewPothole> {
       : MyColors.pink.withAlpha(a);
 
   canSubmit() {
-    if (lat == null || long == null || image == null) {
+    if (lat == null ||
+        long == null ||
+        image == null ||
+        descriptionCntrl.text == '') {
       return false;
     } else {
       return true;
@@ -87,6 +93,7 @@ class _UploadNewPotholeState extends State<UploadNewPothole> {
       date: DateTime.now().toIso8601String(),
       createdAt: Timestamp.now(),
       isVerified: 'false',
+      description: descriptionCntrl.text,
     );
 
     PotholeController.updateNewPotholeToFire(newPothole);
@@ -156,6 +163,13 @@ class _UploadNewPotholeState extends State<UploadNewPothole> {
               ),
               const SizedBox(height: 20),
 
+              ///-------------------------------------------------- `fetch Location btn`
+              Obx(
+                () => showLocationFetchBtn()
+                    ? MyOutlinedBtn('Fetch Location', getLocation)
+                    : const SizedBox(),
+              ),
+
               /// ------------------------------------------------------- `location info`
               if (place != null)
                 Column(
@@ -190,6 +204,18 @@ class _UploadNewPotholeState extends State<UploadNewPothole> {
                   ],
                 ),
 
+              /// ------------------------------------------------------- `description`
+              TextFieldWrapper(
+                TextField(
+                  controller: descriptionCntrl,
+                  maxLines: 5,
+                  decoration: const InputDecoration.collapsed(
+                    hintText: 'enter description',
+                    hintStyle: MyTStyles.kTS15Medium,
+                  ),
+                ),
+              ),
+
               SizedBox(
                 width: double.infinity,
                 child: MyOutlinedBtn(
@@ -219,6 +245,8 @@ class _UploadNewPotholeState extends State<UploadNewPothole> {
         });
 
         await getLiveLocation();
+      } else {
+        showLocationFetchBtn(true);
       }
     });
 

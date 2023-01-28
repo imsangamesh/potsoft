@@ -27,6 +27,9 @@ dependencies:
   get_storage: ^2.0.3
   intl: ^0.17.0
 
+  # camera: ^0.10.2+1
+  # tflite: ^1.1.2
+
   image_picker: ^0.8.6
   image_cropper: ^3.0.1
   geolocator: ^9.0.2

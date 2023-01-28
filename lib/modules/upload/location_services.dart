@@ -87,6 +87,7 @@ class LocationServices {
       date: DateTime.now().toIso8601String(),
       createdAt: Timestamp.now(),
       isVerified: 'false',
+      description: '',
     );
 
     return place;

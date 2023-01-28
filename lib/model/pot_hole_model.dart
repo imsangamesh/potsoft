@@ -5,7 +5,7 @@ class PotholeModel {
   final double lat, long;
   final String date;
   final Timestamp createdAt;
-  final String isVerified;
+  final String isVerified, description;
 
   PotholeModel({
     required this.id,
@@ -21,6 +21,7 @@ class PotholeModel {
     required this.date,
     required this.createdAt,
     required this.isVerified,
+    required this.description,
   });
 
   toMap() => {
@@ -37,6 +38,7 @@ class PotholeModel {
         'long': long,
         'createdAt': createdAt,
         'isVerified': isVerified,
+        'description': description,
       };
 
   static PotholeModel fromMap(Map<String, dynamic> map) {
@@ -54,6 +56,7 @@ class PotholeModel {
       long: map['long'],
       createdAt: map['createdAt'],
       isVerified: map['isVerified'],
+      description: map['description'],
     );
   }
 }

@@ -5,6 +5,8 @@ import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:potsoft/core/constants/mykeys.dart';
 import 'package:potsoft/core/utilities/utils.dart';
+import 'package:potsoft/modules/faq/faq_section_view.dart';
+import 'package:potsoft/modules/feedback/feedback_view.dart';
 import 'package:potsoft/modules/home/verified_potholes_view.dart';
 
 import '../../../core/constants/my_constants.dart';
@@ -175,10 +177,6 @@ class MyDrawer extends StatelessWidget {
                     Get.back();
                     Get.to(() => const VerifiedPotholesView());
                   },
-                  leading: Icon(
-                    Icons.auto_awesome,
-                    color: isDark.value ? MyColors.wheat : MyColors.darkPink,
-                  ),
                   tileColor: primaryWithAlpha(100),
                   title: const Text(
                     'Check-out Potholes!',
@@ -201,6 +199,40 @@ class MyDrawer extends StatelessWidget {
                   subtitle:
                       isRequestPlaced ? const Text('request placed') : null,
                 ),
+              const SizedBox(height: 10),
+              // --------------------------------------------------------- faqs
+              ListTile(
+                onTap: () {
+                  Get.back();
+                  Get.to(() => FaqSection());
+                },
+                tileColor: primaryWithAlpha(100),
+                title: const Text(
+                  'Frequently asked questions',
+                  style: MyTStyles.kTS16Medium,
+                ),
+                trailing: Icon(
+                  Icons.keyboard_double_arrow_right_rounded,
+                  color: isDark.value ? MyColors.wheat : MyColors.darkPink,
+                ),
+              ),
+              const SizedBox(height: 10),
+              // --------------------------------------------------------- faqs
+              ListTile(
+                onTap: () {
+                  Get.back();
+                  Get.to(() => FeedbackView());
+                },
+                tileColor: primaryWithAlpha(100),
+                title: const Text(
+                  'Share Feedback',
+                  style: MyTStyles.kTS16Medium,
+                ),
+                trailing: Icon(
+                  Icons.keyboard_double_arrow_right_rounded,
+                  color: isDark.value ? MyColors.wheat : MyColors.darkPink,
+                ),
+              ),
               const Spacer(),
               // --------------------------------------------------------- logout
               InkWell(
